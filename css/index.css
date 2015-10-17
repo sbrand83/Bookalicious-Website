@@ -1,0 +1,28 @@
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-color: #585858;
+	color: white;
+}
+
+
+
+.middle {
+	width:50%;
+	margin: auto;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	float: left;
+}
+
+.content {
+	width: 50%;
+	margin: auto;
+}
