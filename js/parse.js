@@ -68,26 +68,34 @@ function registerClick() {
     console.log("register button clicked");
 
     var user = new Parse.User();
+    
+    var registerAlert = document.getElementById("registerAlert");
+    
+    var buttonText = document.getElementById("loginLogoutButton");
+    var regButton = document.getElementById("registerButton");
+    var username = document.getElementById("logEmail");
+    var password = document.getElementById("logPassword");
 
-    var email = document.getElementById("regEmail").value;
-    var password = document.getElementById("regPassword").value;
-    var firstName = document.getElementById("regFirstName").value;
-    var lastName = document.getElementById("regLastName").value;
+    var regEmail = document.getElementById("regEmail").value;
+    var regPassword = document.getElementById("regPassword").value;
+    var regFirstName = document.getElementById("regFirstName").value;
+    var regLastName = document.getElementById("regLastName").value;
 
-    console.log(email);
-    console.log(password);
-    console.log(firstName);
-    console.log(lastName);
-
-    user.set("username", email);
-    user.set("password", password);
-    user.set("firstName", firstName);
-    user.set("lastName", lastName);
-    user.set("email", email);
+    user.set("username", regEmail);
+    user.set("password", regPassword);
+    user.set("firstName", regFirstName);
+    user.set("lastName", regLastName);
+    user.set("email", regEmail);
 
     user.signUp(null, {
         success: function (user) {
-            console.log("Yay");
+            registerAlert.style.visibility = "visible";
+            buttonText.innerHTML = "Logout";
+                regButton.disabled = true;
+                username.value = "";
+                password.value = "";
+                username.style.display = "none";
+                password.style.display = "none";
         },
         error: function (user, error) {
             alert("Error: " + error.code + " " + error.message);
