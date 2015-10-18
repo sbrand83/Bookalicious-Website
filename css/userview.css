@@ -1,0 +1,17 @@
+.left {
+	float: left;
+	margin-left: 20px;
+	width:30%;
+}
+
+.right {
+	float: right;
+	margin-right: 20px;
+	width:60%;
+	
+}
+
+.bookinfo {
+	padding: 20px;
+	height: 50px;
+}
