@@ -5,17 +5,21 @@
 .jumbotron {
 	background-color: #585858;
 	color: white;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .nav-tabs > li, .nav-pills > li {
     float:none;
+    color: white;
     display:inline-block;
     *display:inline; /* ie7 fix */
      zoom:1; /* hasLayout ie7 trigger */
     margin-left:100px;
     margin-right:75px;
-    margin-bottom:25px;
-    margin-top:25px;
+    margin-bottom:0px;
+    margin-top:0px;
 }
 
 .nav-tabs, .nav-pills {
@@ -32,12 +36,29 @@
 }
 
 .alert {
-   visibility: hidden;
+    margin-top: 0px;
+    visibility: hidden;
 }
 
-/*
-.content {
-	width: 50%;
-	margin: auto;
+#icon {
+    margin-top: 2.5px;   
 }
-*/
+
+#aboutParagraph, #features{
+    width: 60%;
+    font-size: 16pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+#footer {
+    color: dimgrey;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    color: black;
+}
