@@ -12,7 +12,8 @@
 		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="js/user_tabs.js" type="text/javascript"></script>
-		<script src="js/parse.js" type="text/javascript"></script>
+		<script src="js/userview.js" type="text/javascript"></script>
+		<!--<script src="js/parse.js" type="text/javascript"></script>-->
 	</head>
 	<body>
 		<!--NavBar -->
@@ -26,7 +27,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a style="padding-top: 0px;" class="navbar-brand" href="#top"> <img alt="Brand" src="images/ExampleJPG.jpg"> </a>
+					<a style="padding-top: 3px;" class="navbar-brand" href="#top"> <img alt="Brand" src="images/bookaliciousIcon.png"> </a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -79,10 +80,10 @@
 			<!--TabContent-->
 
 			<div class="tab-content center">
-				<div role="tabpanel" class="tab-pane fade" id="textbooks_tab">
+				<div role="tabpanel" class="tab-pane fade in active" id="textbooks_tab">
 					<div class="left">
 						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<button id="filter" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Filter <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
@@ -98,7 +99,7 @@
 							</ul>
 
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search for a textbook" aria-describedby="basic-addon1">
+								<input id="searchfield" type="text" class="form-control" placeholder="Search for a textbook" aria-describedby="basic-addon1">
 								<span class="input-group-btn">
 									<button id="searchButton" class="btn btn-default" type="button">
 										Search
@@ -109,51 +110,41 @@
 						<br />
 						<br />
 
-						<div class="list-group">
-							<button type="button" class="list-group-item">
-								Book 1
-							</button>
-							<button type="button" class="list-group-item">
-								Book 2
-							</button>
-							<button type="button" class="list-group-item">
-								Book 3
-							</button>
-							<button type="button" class="list-group-item">
-								Book 4
-							</button>
-							<button type="button" class="list-group-item">
-								Book 5
-							</button>
+						<div class="list-group" id="book_list">
 						</div>
 
 					</div>
-					<div class="right">
-						<div class="panel panel-primary bookinfo">
-							Book info here
-						</div>
-					</div>
+					
 				</div>
 
 				<div role="tabpanel" class="tab-pane fade" id="messages_tab">
 					<h3>Messages</h3>
 					<br />
-					add list of messages , opens modal to type/send when clicked
+					Soon to be implemented.
 
 				</div>
 				<div role="tabpanel" class="tab-pane fade" id="profile_tab">
-					<h3>Profile</h3>
-
-					<p>
-						User Profile
-					</p>
+					
+					<h2 id="name">Name</h2>
+					
+					
+					<h3 id="username">Username</h3>
+					<br />
+					<br />
+					<h3 id="rating">Rating</h3>
+					
+					<br />
+					<br />
+					
+					<img id="profilePic" src="images/pie.jpg" />
+					
 				</div>
 
 				<div role="tabpanel" class="tab-pane fade" id="postBooks_tab">
 					<h3>Sell Your Textbooks</h3>
 
 					<p>
-
+						Soon to be implemented.  Use the android app to do this for now.
 					</p>
 				</div>
 			</div>

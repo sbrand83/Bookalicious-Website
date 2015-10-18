@@ -19,6 +19,8 @@ window.onload = function () {
         password.value = "";
         username.style.display = "none";
         password.style.display = "none";
+        //window.location.href = "./userview.html";
+        location.replace("/userview.html");
     }
 
 };
@@ -45,6 +47,7 @@ function loginLogoutClick() {
                 console.log(username.style.display);
                 username.style.display = "none";
                 password.style.display = "none";
+                location.replace("userview.html");
             },
             error: function (user, error) {
                 if(error.code == 101) {
