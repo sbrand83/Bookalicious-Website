@@ -7,22 +7,33 @@
 	color: white;
 }
 
-
-
-.middle {
-	width:50%;
-	margin: auto;
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+    margin-left:100px;
+    margin-right:75px;
+    margin-bottom:25px;
+    margin-top:25px;
 }
 
-li {
-	display: inline;
+.nav-tabs, .nav-pills {
+    text-align:center;
+    font-size: 24pt;
 }
 
-a {
-	float: left;
+.modal-body input{
+    margin-bottom: 20px;
 }
 
+.carousel-inner img {
+    margin: auto;
+}
+
+/*
 .content {
 	width: 50%;
 	margin: auto;
 }
+*/
